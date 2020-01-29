@@ -1,6 +1,7 @@
 import win32gui, win32process
 import psutil
 
+from time import sleep
 from pycaw.pycaw import AudioUtilities, ISimpleAudioVolume
 
 
@@ -47,3 +48,4 @@ while True:
             else:
                 if set_volume() == 0.0:
                     set_volume("open")
+    sleep(0.1)

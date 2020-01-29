@@ -1,6 +1,7 @@
 import win32gui, win32process
 import psutil
 
+from time import sleep
 from pycaw.pycaw import AudioUtilities, ISimpleAudioVolume
 
 
@@ -47,3 +48,4 @@ while True:
             else:
                 if ses_ayarlama() == 0.0:
                     ses_ayarlama("ac")
+    sleep(0.1)
